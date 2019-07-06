@@ -27,3 +27,20 @@ Feel free to use this at your leisure, but be conscious about leaving your banki
 - `password`: Online banking password
 - `memorableWord`: Online banking memorable word
 
+Script output is as follows (yes I know I need to clean up the balance text):
+Halifax plugin
+script.js:8
+==============
+```
+Initialising...
+Username and password accepted
+Memorable word accepted
+Account: Main Account
+	 £ 100.00 Balance
+Account: Another Account
+	 £ 50.00 Balance
+Account: Yet Another Account
+	 £ 50.00 Balance
+Account: Halifax Mastercard
+	 £ 100.00 Current balance
+```
