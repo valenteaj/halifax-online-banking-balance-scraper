@@ -27,11 +27,12 @@ Feel free to use this at your leisure, but be conscious about leaving your banki
 - `password`: Online banking password
 - `memorableWord`: Online banking memorable word
 
+## Output 
 Script output is as follows (yes I know I need to clean up the balance text):
-Halifax plugin
-script.js:8
-==============
+
 ```
+Halifax plugin
+==============
 Initialising...
 Username and password accepted
 Memorable word accepted
