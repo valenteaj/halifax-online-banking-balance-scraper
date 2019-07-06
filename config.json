@@ -1,0 +1,8 @@
+{
+    "pluginName": "Halifax",
+    "bankingUrl": "https://www.halifax-online.co.uk/personal/logon/login.jsp",
+    "maxAccounts": 10,
+    "username": "<username>",
+    "password": "<password>",
+    "memorableWord": "<memorableWord>"
+}
