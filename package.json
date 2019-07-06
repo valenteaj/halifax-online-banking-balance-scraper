@@ -1,0 +1,30 @@
+{
+  "name": "halifax-online-banking-balance-scrape",
+  "version": "1.0.0",
+  "description": "Javascript web scraper to obtain current account balances from Halifax (UK) online banking using Selenium WebDriver",
+  "main": "script.js",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valenteaj/halifax-online-banking-balance-scrape.git"
+  },
+  "keywords": [
+    "halifax",
+    "scrape",
+    "online",
+    "banking",
+    "balance"
+  ],
+  "author": "valenteaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valenteaj/halifax-online-banking-balance-scrape/issues"
+  },
+  "homepage": "https://github.com/valenteaj/halifax-online-banking-balance-scrape#readme"
+}
