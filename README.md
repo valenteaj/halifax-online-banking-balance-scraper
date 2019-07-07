@@ -1,4 +1,4 @@
-# halifax-online-banking-balance-scrape
+# halifax-online-banking-balance-scraper
 ## Overview
 Javascript web scraper to obtain current account balances from Halifax (UK) online banking using Selenium WebDriver
 
