@@ -1,7 +1,7 @@
 {
     "pluginName": "Halifax",
     "bankingUrl": "https://www.halifax-online.co.uk/personal/logon/login.jsp",
-    "username": "username",
-    "password": "password",
-    "memorableWord": "memorable"
+    "username": "<username>",
+    "password": "<password>",
+    "memorableWord": "<memorableWord>"
 }
