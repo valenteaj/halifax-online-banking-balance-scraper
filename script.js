@@ -53,7 +53,7 @@ const timeout = 10000;
         // 3rd login screen
         //=================
         // Wait until the account controls have rendered. This means the memorable data was accepted.
-        by = By.id('lnkAccName_des-m-sat-xx-2');
+        by = By.className('des-m-sat-xx-account-information');
         await driver.wait(until.elementLocated(by), timeout)
             .catch(() => { throw "Error: Memorable data invalid"; });
         await driver.wait(until.elementIsVisible(driver.findElement(by)), timeout);
