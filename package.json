@@ -1,5 +1,5 @@
 {
-  "name": "halifax-online-banking-balance-scrape",
+  "name": "halifax-online-banking-balance-scraper",
   "version": "1.0.0",
   "description": "Javascript web scraper to obtain current account balances from Halifax (UK) online banking using Selenium WebDriver",
   "main": "script.js",
