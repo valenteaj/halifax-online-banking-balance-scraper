@@ -72,9 +72,10 @@ const timeout = 10000;
         }
 
         // Get all of the account names to present alongside the balances
-        for (let i = 1; i <= config.maxAccounts; i++) {
-            let allAccountsProcessed = false;
-            const accountNameElement = "lnkAccName_des-m-sat-xx-" + i;
+        let allAccountsProcessed = false;
+        let accountIndex = 1;
+        do {
+            const accountNameElement = "lnkAccName_des-m-sat-xx-" + accountIndex++;
             await driver.findElement(By.id(accountNameElement)).then(async function(res) {
                 // Account element was found. Get its name.
                 const accountName = await res.getText();
@@ -83,11 +84,7 @@ const timeout = 10000;
                 // Account with index not found. There are no more accounts. We're done here.
                 allAccountsProcessed = true;
             });
-
-            if (allAccountsProcessed) {
-                break;
-            }
-        }
+        } while (!allAccountsProcessed)
 
         const accountInfo = reconcileAccountsAndBalances(accountNames, balances);
 

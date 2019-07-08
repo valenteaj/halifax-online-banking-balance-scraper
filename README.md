@@ -8,12 +8,21 @@ The script navigates through the various stages of the login process using the c
 
 Feel free to use this at your leisure, but be conscious about leaving your banking credentials in the plain text format config file. I accept no liability for consequently emptied bank accounts... etc etc.
 
-## Documentation
+Due to the volatile nature of website design in general, this scraper works as of 08/07/2019.
+
+## Installation
+### Dependencies
+- Ensure Mozilla Firefox is installed on the execution machine 
+- Download the geckodriver proxy designated for your OS and architecture. The executable needs to be accessible from a directory configured in the PATH environment variable. Geckodriver available here: https://github.com/mozilla/geckodriver/releases
+
+### Setup
+Execute `npm install` to install dependencies.
+
+Make a copy of `config.json.example` removing the `.example` extension. Modify the config file with the appropriate username, password and memorable data
 ```
 {
     "pluginName": "Halifax",
     "bankingUrl": "https://www.halifax-online.co.uk/personal/logon/login.jsp",
-    "maxAccounts": 10,
     "username": "<username>",
     "password": "<password>",
     "memorableWord": "<memorableWord>"
@@ -22,10 +31,12 @@ Feel free to use this at your leisure, but be conscious about leaving your banki
 
 - `pluginName`: The name of the plugin that is output to the console. This is pretty much useless.
 - `bankingUrl`: The URL of step 1 of the online banking login process.
-- `maxAccounts`: The maximum number of bank/credit card accounts the script searches for.
 - `username`: Online banking username
 - `password`: Online banking password
 - `memorableWord`: Online banking memorable word
+
+## Usage
+run `node script.js`
 
 ## Output 
 Script output is as follows (yes I know I need to clean up the balance text):
